@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Home from './Home';
 import registerServiceWorker from './registerServiceWorker';
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 import AOS from 'aos';
 import "../node_modules/aos/dist/aos.css";
 AOS.init();
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const theme = createMuiTheme();
+ReactDOM.render(
+    <MuiThemeProvider theme={theme}>
+    <Home />
+</MuiThemeProvider>, document.getElementById('root'));
 registerServiceWorker();
