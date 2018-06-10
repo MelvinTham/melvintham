@@ -5,10 +5,12 @@
   "dependencies": {
     "@material-ui/core": "^1.2.0",
     "aos": "^2.3.0",
+    "bootstrap": "^4.1.1",
     "material-ui": "^1.0.0-beta.47",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "reactstrap": "^6.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
