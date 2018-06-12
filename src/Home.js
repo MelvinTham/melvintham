@@ -21,21 +21,40 @@ import {
   DropdownItem } from 'reactstrap';
 
 class Home extends Component {
-  render() {
-    const style= {
-      textAlign: 'center',
-    }
+  constructor(props) {
+    super(props);
 
+  }
+  render() {
     return (
       <div data-aos ="fade-up" >
-        <Navbar  >
+        {/* <Navbar style={{backgroundColor:"Black"}} >
           <NavbarBrand href="/" >
-            <Typography style={{fontFamily:"Roboto",color:"Black"}}  variant="display2"> 
+            <Typography style={{fontFamily:"Roboto",color:"White"}}  variant="display1"> 
                 Melvin Tham
             </Typography>
           </NavbarBrand>
+
+            <Nav navbar>
+              <NavItem style={{backgroundColor:"White"}} href="#">Components</NavItem>
+              <NavItem style={{backgroundColor:"White"}} href="#">Components</NavItem>
+              </Nav>
+
+
+
+
+        </Navbar> */}
+       <Navbar className="navbar-dark bg-dark" style={{height: '100px'}}expand="md">
+          <NavbarBrand style={{color: 'white',fontSize:'25px',fontFamily:'Roboto'}}  href="/">Melvin Tham</NavbarBrand>
+            <Nav className="ml-auto" navbar>
+              <NavItem className="mr-5">
+                <NavLink style={{color: 'white'}} href="#">About</NavLink>
+              </NavItem>
+              <NavItem className="mr-5">
+                <NavLink style={{color: 'white'}}  href="#">Contact</NavLink>
+              </NavItem>
+            </Nav>
         </Navbar>
-       
 
        
 

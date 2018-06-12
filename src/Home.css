@@ -7,3 +7,13 @@
     text-align: center !important;
     display: inline-block;
 }
+
+.adjustNavRight{
+    display: inline-block;
+    position: relative;
+    z-index: inherit;
+}
+
+.mr-5{
+    font-size:20px;
+}
