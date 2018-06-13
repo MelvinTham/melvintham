@@ -28,35 +28,20 @@ class Home extends Component {
   render() {
     return (
       <div data-aos ="fade-up" >
-        {/* <Navbar style={{backgroundColor:"Black"}} >
-          <NavbarBrand href="/" >
-            <Typography style={{fontFamily:"Roboto",color:"White"}}  variant="display1"> 
-                Melvin Tham
-            </Typography>
-          </NavbarBrand>
-
-            <Nav navbar>
-              <NavItem style={{backgroundColor:"White"}} href="#">Components</NavItem>
-              <NavItem style={{backgroundColor:"White"}} href="#">Components</NavItem>
-              </Nav>
-
-
-
-
-        </Navbar> */}
-       <Navbar className="navbar-dark bg-dark" style={{height: '100px'}}expand="md">
+       
+       <Navbar style={{height:'80px',backgroundColor:'black'}}expand="md">
           <NavbarBrand style={{color: 'white',fontSize:'25px',fontFamily:'Roboto'}}  href="/">Melvin Tham</NavbarBrand>
             <Nav className="ml-auto" navbar>
               <NavItem className="mr-5">
-                <NavLink style={{color: 'white'}} href="#">About</NavLink>
+                <NavLink style={{color: 'white',fontFamily:'Roboto'}} href="#">About</NavLink>
               </NavItem>
               <NavItem className="mr-5">
-                <NavLink style={{color: 'white'}}  href="#">Contact</NavLink>
+                <NavLink style={{color: 'white',fontFamily:'Roboto'}}  href="#">Contact</NavLink>
               </NavItem>
             </Nav>
         </Navbar>
 
-       
+       <div className="background">HELLO</div>
 
         <div>
           <Paper className ="cardSize" >
