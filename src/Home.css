@@ -18,12 +18,34 @@
     font-size:20px;
 }
 
-.background{ 
-  background-image:url(images/tempImage.jpg); 
-  background-position: center center;
+.background{
+    /* Set rules to fill background */
+  min-height: 1000px;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  background-image:url(images/Melvin.JPG); 
+
+}
+/* .background{ 
+    width: "100%";
+    height: "auto";
+  background-image:url(images/Melvin.JPG); 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
 
-}
+} */

@@ -41,9 +41,9 @@ class Home extends Component {
             </Nav>
         </Navbar>
 
+       
        <div className="background">HELLO</div>
-
-        <div>
+        {/* <div>
           <Paper className ="cardSize" >
           <h1 className="centerText">hello</h1>
           </Paper>
@@ -58,13 +58,18 @@ class Home extends Component {
 
           </CardContent>
           </Card>
-        </div>
+        </div> */}
+
+        
+        <div></div>
+
       </div>
-     
+      
+  
     );
   }
 
-
 }
+
 
 export default Home;
