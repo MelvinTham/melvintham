@@ -27,9 +27,9 @@ class Home extends Component {
   }
   render() {
     return (
-      <div data-aos ="fade-up" >
+      <div className="background" data-aos ="fade-up" >
        
-       <Navbar style={{height:'80px',backgroundColor:'black'}}expand="md">
+       <Navbar style={{height:'80px',backgroundColor:'black'}} expand="md">
           <NavbarBrand style={{color: 'white',fontSize:'25px',fontFamily:'Roboto'}}  href="/">Melvin Tham</NavbarBrand>
             <Nav className="ml-auto" navbar>
               <NavItem className="mr-5">
@@ -41,8 +41,9 @@ class Home extends Component {
             </Nav>
         </Navbar>
 
-       
-       <div className="background">HELLO</div>
+       <div>
+       <div ></div>
+       </div>
         {/* <div>
           <Paper className ="cardSize" >
           <h1 className="centerText">hello</h1>
@@ -61,7 +62,7 @@ class Home extends Component {
         </div> */}
 
         
-        <div></div>
+        
 
       </div>
       
