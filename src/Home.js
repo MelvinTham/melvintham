@@ -25,17 +25,31 @@ class Home extends Component {
     super(props);
     
     this.downButton = this.downButton.bind(this);
+    
   }
+  
 
   downButton(){
-    document.scrollingElement.scrollBy(0,window.innerHeight);
+    // document.scrollingElement.scrollBy(0,window.innerHeight);
+    var el = document.getElementById('div-02');
+    var r1 = el.closest("#div-01");
+    console.log(r1);
+    r1.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    // document.getElementById('div').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+  componentDidMount(){
+    document.documentElement.addEventListener('scroll', this.handleScroll);
   }
 
   render() {
 
     return (
-      <div data-aos ="fade-up">
-        
+      
+      <div  data-aos ="fade-up">
+           <div id="nav" className ="navButtons">
+          <span class ="prev"></span>  
+          <span class ="next"></span>
+      </div> 
        {/* <Navbar style={{height:'80px',backgroundColor:'black'}} expand="md">
           <NavbarBrand style={{color: 'white',fontSize:'25px',fontFamily:'Roboto'}}  href="/">Melvin Tham</NavbarBrand>
             <Nav className="ml-auto" navbar>
@@ -48,13 +62,18 @@ class Home extends Component {
             </Nav>
         </Navbar>  */}
 
-       <div className="background" >
-       <button onClick= {this.downButton} data-aos="fade-up" data-aos-duration="300" data-aos-delay="400" data-aos-offset="20">button</button>
+       <div id="div-01" className="background">
+       {/* <button onClick= {this.downButton} data-aos="fade-up" data-aos-duration="300" data-aos-delay="400" data-aos-offset="20">button</button> */}
        </div>
 
-       <div className="background2" data-aos ="slide-up" data-aos-duration="100" data-aos-delay="400" data-aos-offset="20">
+       <div id="div-02" className="background2" >
+          
+          
           
        </div>
+
+       <div  id="div-03" > </div>
+
         {/* <div>
           <Paper className ="cardSize" >
           <h1 className="centerText">hello</h1>
@@ -72,8 +91,8 @@ class Home extends Component {
           </Card>
         </div> */}
 
-        
-        
+    
+   
 
       </div>
       
