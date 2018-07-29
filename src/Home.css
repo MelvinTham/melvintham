@@ -1,7 +1,15 @@
 body, html {
-    height: 100%;
     margin: 0;
+    padding:0;
 }
+.Main{
+    display: flex;
+    flex-direction: column;
+    max-width: 100% !important;
+    align-items: center;
+       
+}
+
 .cardSize{
     height:325px;
     width:325px;
@@ -55,41 +63,27 @@ body, html {
     top: 0;
     width: 100%;
   }
-  
+
+.textStyle{
+    margin-top: 150px; 
+    padding: 10px 20px;
+    border-radius: 7px !important;
+    border: 0.4px solid rgb(76, 100, 235);
+   
+}
+
 
 img{
     max-width: 100%;
     width:100%;
-}
-.nycHeight{
-    height:800px;
-
-}
-/* .background{
-   background-image:url(images/taxi.jpg);
-   height:100vh;
-   width:100%; 
-   max-width: 100%;
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   
+    
 }
 
-.background2{
-   background-image:url(images/Melvin.JPG); 
-   height:100vh;
-   width:100%; 
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: cover;
+.melvinStyle{
+    border-radius: 50%;
+    top: 100px;
+    width: 250px !important;
+    height: 250px !important;
+    
+    
 }
-
-.background3{
-    background-image:url(images/nyc.jpg); 
-    height:100vh;
-    width:100%; 
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
- } */

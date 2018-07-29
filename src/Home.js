@@ -8,8 +8,8 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import nyc from './images/nyc.jpg';
 import melvin from './images/Melvin.JPG';
-import {Image} from 'react-bootstrap';
-
+import {Grid,Row,Col,Image} from 'react-bootstrap';
+import {Avatar} from '@material-ui/core';
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -46,55 +46,29 @@ handleScroll(){
 
   render() {
 
-    var textStyle = {
-      position: 'absolute', 
-      top: '25%', 
-      left: '35%',
-      color:'white',
-    };
-
+   
 
     return (
-      <div  data-aos ="fade-down"  data-aos-easing="linear" data-aos-duration="750">
-          <div id="nav" className ="navButtons">
+      <div className="Main" data-aos ="fade-down"  data-aos-easing="linear" data-aos-duration="750">
+          {/* <div id="nav" className ="navButtons">
           <span className ="prev"></span>  
           <span className ="next"></span>
-          </div> 
-    
-
-       <div id="div-01">
-          <img src = {nyc} alt = "nyc" className ="nycHeight" data-aos="fade-down" />
-          <h1 style = {textStyle} data-aos="fade-down">hello My Name is Melvin</h1>
+          </div>  */}
+      
+        <div id="div-01" >
+        
+        <Avatar src={melvin} alt ="Melvin" className="melvinStyle" />  
+          
+          
+       
+       
        {/* <button onClick= {this.downButton} data-aos="fade-up" data-aos-duration="300" data-aos-delay="400" data-aos-offset="20">button</button> */}
        </div>
 
-       <div id="div-02" className="background2" >
+       <Paper className = "textStyle" data-aos="fade-down">
+          <Typography variant="headline" color="primary">Melvin Tham</Typography>
           
-          
-          
-       </div>
-
-       <div  id="div-03" className="background3" > </div>
-
-        {/* <div>
-          <Paper className ="cardSize" >
-          <h1 className="centerText">hello</h1>
           </Paper>
-          <Card className ="cardSize" data-aos ="fade-left">
-            <CardContent>
-          <Typography color="textSecondary">
-            Test Test
-          </Typography>
-
-<Button color="primary">primary</Button>{' '}
-        <Button color="secondary">secondary</Button>{' '}
-
-          </CardContent>
-          </Card>
-        </div> */}
-
-    
-   
 
       </div>
       
