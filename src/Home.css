@@ -50,13 +50,30 @@ body, html {
     background:url(images/keyboard_arrow_up_black_27x27.png) no-repeat 5px 5px;
 }
 
-.background{
-   background-image:url(images/taxi.jpg); 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+
+img{
+    max-width: 100%;
+    width:100%;
+}
+.nycHeight{
+    height:800px;
+
+}
+/* .background{
+   background-image:url(images/taxi.jpg);
    height:100vh;
    width:100%; 
+   max-width: 100%;
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
+   
 }
 
 .background2{
@@ -75,4 +92,4 @@ body, html {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
- }
+ } */
