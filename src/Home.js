@@ -54,8 +54,13 @@ handleScroll(){
           <span className ="prev"></span>  
           <span className ="next"></span>
           </div>  */}
-      
-        <div id="div-01" >
+        <div id ="div-01" className="Main">
+            <h1 className="mainOverlay">Melvin Tham the coolest of the coolest coolest coolest mount everest</h1>
+            <img src ={nyc} alt ="main" className="mainImg" />
+           
+        </div>
+
+        <div id="div-02" data-aos ="fade-down" data-aos-easing="linear" data-aos-duration="750">
         
         <Avatar src={melvin} alt ="Melvin" className="melvinStyle" />  
           
