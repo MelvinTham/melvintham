@@ -10,71 +10,77 @@ import nyc from './images/nyc.jpg';
 import melvin from './images/Melvin.JPG';
 import {Grid,Row,Col,Image} from 'react-bootstrap';
 import {Avatar} from '@material-ui/core';
-class Home extends Component {
+
+
+class Home extends React.Component {
   constructor(props) {
     super(props);
-    
-    this.downButton = this.downButton.bind(this);
-    this.handleScroll = this.handleScroll.bind(this);
-    
-  }
   
-
-  downButton(){
-    // document.scrollingElement.scrollBy(0,window.innerHeight);
-    var el = document.getElementById('div-02');
-    var r1 = el.closest("#div-01");
-    console.log(r1);
-    r1.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-    // document.getElementById('div').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
-
-handleScroll(){
-  var nav = document.getElementById('navButtons');
-  var sticky = nav.offsetTop;
-  if (window.pageYOffset >= sticky) {
-    console.log("it works!");
-    nav.classList.add("sticky");
-  } else {
-    console.log("it doesnt works!");
-    nav.classList.remove("sticky");
-  }
-}
-  componentDidMount(){
-    document.documentElement.addEventListener('scroll', this.handleScroll);
-  }
-
   render() {
-
-   
-
     return (
-      <div className="Main" data-aos ="fade-down"  data-aos-easing="linear" data-aos-duration="750">
-          {/* <div id="nav" className ="navButtons">
-          <span className ="prev"></span>  
-          <span className ="next"></span>
-          </div>  */}
-        <div id ="div-01" className="Main">
-            <h1 className="mainOverlay">Melvin Tham the coolest of the coolest coolest coolest mount everest</h1>
-            <img src ={nyc} alt ="main" className="mainImg" />
+      <div data-aos ="fade-down"  data-aos-easing="linear" data-aos-duration="750">
+          <header id="Landing">
+            <h1 style ={{color:'white'}}>Melvin Tham</h1>
            
-        </div>
+              <p style ={{color:'white'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.</p>
+          </header>
+  
+          <div class="row">
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+    <Avatar src={melvin} alt ="Melvin" className="melvinStyle" /> 
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+  </div>
 
-        <div id="div-02" data-aos ="fade-down" data-aos-easing="linear" data-aos-duration="750">
+          {/* <Grid>
+            <Row className="show-grid">
+              <Col xs={6} md={4}>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.</p>
+              </Col>
+              <Col xs={6} md={4}>
+              <Avatar src={melvin} alt ="Melvin" className="melvinStyle" /> 
+              </Col>
+              <Col xs={6} md={4}>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.</p>
+              </Col>
+              </Row>
+          </Grid> */}
+  {/* <section id="section-c">
+    <div className="box-1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum est, molestias dolores quis sunt nobis temporibus veritatis libero odio!
+    </div>
+    <div className="box-2">
+    <Avatar src={melvin} alt ="Melvin" className="melvinStyle" /> 
+    </div>
+    <div className="box-3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum est, molestias dolores quis sunt nobis temporibus veritatis libero odio!
+      
+    </div>
+  </section> */}
+
+
+        {/* <div id ="div-01" >
+            hello
+           
+        </div> */}
+
+        {/* <div id="div-02" data-aos ="fade-down" data-aos-easing="linear" data-aos-duration="750">
         
         <Avatar src={melvin} alt ="Melvin" className="melvinStyle" />  
-          
-          
-       
-       
-       {/* <button onClick= {this.downButton} data-aos="fade-up" data-aos-duration="300" data-aos-delay="400" data-aos-offset="20">button</button> */}
+ 
        </div>
 
        <Paper className = "textStyle" data-aos="fade-down">
           <Typography variant="headline" color="primary">Melvin Tham</Typography>
           
-          </Paper>
-
+          </Paper> */}
+           
       </div>
       
   
