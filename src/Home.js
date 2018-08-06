@@ -25,19 +25,27 @@ class Home extends React.Component {
            
               <p style ={{color:'white'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.</p>
           </header>
-  
-          <div class="row">
-    <div class="col">
-      One of three columns
-    </div>
-    <div class="col">
-    <Avatar src={melvin} alt ="Melvin" className="melvinStyle" /> 
-    </div>
-    <div class="col">
-      One of three columns
-    </div>
-  </div>
 
+        <div id ="Profile" style={{background:'#CAFAFE'}}>
+          <div className="flexCenter">
+              <h1>Profile</h1>
+              <h5>I'm aspiring to be a Software Engineer</h5>
+          </div>
+         
+          <hr className="divider"/>
+          <div class="row">
+             <div class="col">
+                One of three columns
+               
+
+            </div>
+            <div class="col">
+                One of three columns
+               
+
+            </div>
+          </div>
+        </div>
           {/* <Grid>
             <Row className="show-grid">
               <Col xs={6} md={4}>
