@@ -8,7 +8,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import nyc from './images/nyc.jpg';
 import melvin from './images/Melvin.JPG';
-import {Grid,Row,Col,Image} from 'react-bootstrap';
+import {Grid,Row,Col,Clearfix,Image} from 'react-bootstrap';
 import {Avatar} from '@material-ui/core';
 
 
@@ -26,26 +26,69 @@ class Home extends React.Component {
               <p style ={{color:'white'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.</p>
           </header>
 
-        <div id ="Profile" style={{background:'#CAFAFE'}}>
+        <div id ="Profile" style={{background:'F4F4F4'}}>
           <div className="flexCenter">
               <h1>Profile</h1>
               <h5>I'm aspiring to be a Software Engineer</h5>
-          </div>
          
           <hr className="divider"/>
-          <div class="row">
-             <div class="col">
-                One of three columns
-               
 
-            </div>
-            <div class="col">
-                One of three columns
-               
-
-            </div>
+          <div className="container"> 
+   <div className="row"> 
+      <div className="col-md-4" style ={{padding:'20px 20px'}}>
+      <h2>About me</h2>
+       <h3> hello   hello   hello   hello   hello   hello   hello   hello   hello   hello   hello   hello   hello</h3>
+      
+      </div>
+      <div className="col-md-4" style ={{padding:'20px 20px'}}>
+      <div className="flexCenter">
+      <Avatar  src={melvin} alt ="Melvin" className="melvinStyle"  />
+      </div>
+      </div> 
+      <div className="col-md-4" style ={{padding:'20px 20px'}}>
+      <h2>Details</h2>
+        <h3>hello   hello   hello   hello   hello   hello   hello   hello   hello   hello   hello   hello   hello 
+          </h3>
           </div>
+   </div> 
+</div>
+</div>
+
+
+
+          {/* <div className="flexCenter">           
+          <Grid >
+    <Row className="show-grid" >
+      <Col xs={6} sm={4} className="flexCenter">
+      <h2>About me</h2>
+       <h3> hello   hello   hello   hello   hello   hello   hello   hello   hello   hello   hello   hello   hello</h3>
+      </Col>
+      
+      <div style ={{padding:'10px 20px'}}></div>
+      
+
+      <Col xs={6} sm={4} className="flexCenter"  >
+      <Avatar  src={melvin} alt ="Melvin" className="melvinStyle" />
+      </Col>
+
+      <div style ={{padding:'10px 20px'}}></div>
+      
+      <Col xs={6} sm={4} className="flexCenter">
+        <h2>Details</h2>
+        <h3>hello   hello   hello   hello   hello   hello   hello   hello   hello   hello   hello   hello   hello </h3>
+      </Col>
+     
+      
+    </Row>
+  </Grid>
+          </div> */}
+
+          
+        
+
         </div>
+
+
           {/* <Grid>
             <Row className="show-grid">
               <Col xs={6} md={4}>

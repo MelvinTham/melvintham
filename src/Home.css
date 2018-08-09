@@ -42,7 +42,7 @@ body{
 .divider{
   border-top: 1px solid #8c8b8b !important;
   width:50%;
-  margin-left: 25%;
+ 
 }
 
 #section-c{
@@ -100,20 +100,30 @@ mainImg{
 }
 
 .melvinStyle{
-    border-radius: 50%;
-    top: 100px;
-    width: 250px !important;
-    height: 250px !important;
+    
+    width: 275px !important;
+    height: 275px !important;
+}
+.myPic Avatar{
+  background: pink;
 }
 
-
-
-
+@media screen and (min-width: 100px){
+  html{
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 320px){
+  html{
+    font-size: 14px;
+  }
+}
 
 @media screen and (min-width: 500px){
     html{
       font-size: 14px;
     }
+   
   }
   @media screen and (min-width: 570px){
     html{
