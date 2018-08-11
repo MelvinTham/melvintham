@@ -13,13 +13,14 @@ body{
   background-image:url('./images/nyc.jpg');
   background-size:cover;
   background-position:center;
-  height:100vh;
+  height:95vh;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   text-align:center;
   padding:0 20px;
+  z-index: -1;
 }
 
 #Landing h1{
@@ -56,14 +57,6 @@ body{
   padding:20px;
 }
 
-#section-c .box-1, #section-c .box-3{
-  background:white;
-  color:black;
-}
-
-#section-c .box-2{
-  background:white;
-}
 
 .Main{
     display: flex;
@@ -85,46 +78,45 @@ body{
     color:white;
     width: 100%;
     margin-left: auto;
-    margin-right: auto;
-     
+    margin-right: auto;   
 }
 
 img{
     max-width: 100%;
-    width:100%;
-    
+    width:100%; 
 }
 
-mainImg{
-    z-index: -1;
-}
+
 
 .melvinStyle{
-    
     width: 275px !important;
     height: 275px !important;
 }
-.myPic Avatar{
-  background: pink;
-}
- #Landing .scroll-down {
-      height: 80px; 
-      width: 110px;
-      display: block;
-      position: absolute;
-      bottom: 0px; 
-      right: 5%; 
-      background-color: #222222; 
-      text-align: center; 
-      z-index: 6; 
-  }
 
-#Landing .scroll-down .glyphicon { 
+.downArrow{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction:column;
+  height:5vh;
+  background-color: #222222; 
+}
+
+.scroll-down {
+      height: 75px; 
+      width: 65px;
+      display: block;
+      position: absolute;     
+      text-align: center; 
+      z-index: 99; 
+}
+
+.scroll-down .glyphicon { 
 	color: #FFFFFF; 
 	font-size: 30px; 
-	padding-right: 2px; 
-	padding-top: 20px; 
-	
+	padding-right: 0px; 
+  padding-top: 20px; 
 	animation-name: wiggle;
 	animation-duration: 1.2s;
 	animation-timing-function: linear;
