@@ -19,12 +19,19 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <div data-aos ="fade-down"  data-aos-easing="linear" data-aos-duration="750">
+                // START OF LANDING PAGE
+      <div data-aos ="fade-down" data-aos-easing="linear" data-aos-duration="750" className="Landing">
           <header id="Landing">
             <h1 style ={{color:'white'}}>Melvin Tham</h1>
-           
               <p style ={{color:'white'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.</p>
+              <a href="#profile" class="scroll-down">	
+				        <span class="glyphicon glyphicon-chevron-down"></span>
+			        </a>
           </header>
+         
+          
+          
+                 {/* PROFILE SECTION */}
 
         <div id ="Profile" style={{background:'F4F4F4'}}>
           <div className="flexCenter">

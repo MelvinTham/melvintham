@@ -107,6 +107,33 @@ mainImg{
 .myPic Avatar{
   background: pink;
 }
+ #Landing .scroll-down {
+      height: 80px; 
+      width: 110px;
+      display: block;
+      position: absolute;
+      bottom: 0px; 
+      right: 5%; 
+      background-color: #222222; 
+      text-align: center; 
+      z-index: 6; 
+  }
+
+#Landing .scroll-down .glyphicon { 
+	color: #FFFFFF; 
+	font-size: 30px; 
+	padding-right: 2px; 
+	padding-top: 20px; 
+	
+	animation-name: wiggle;
+	animation-duration: 1.2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+
+
 
 @media screen and (min-width: 100px){
   html{
@@ -166,4 +193,20 @@ mainImg{
     }
   }
 
+  @media (max-width: 767px) {  
+    #landing .scroll-down { width: 100%; right: 0px; }
+  }
+
+  @keyframes wiggle {
+    0% {
+      padding-top: 20px;
+    }
   
+    50% {
+      padding-top: 28px;
+    }
+  
+    100% {
+      padding-top: 20px;
+    }
+  }
