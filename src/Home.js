@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import './Home.css';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -15,28 +16,37 @@ import {Avatar} from '@material-ui/core';
 class Home extends React.Component {
   constructor(props) {
     super(props);
-  
+    this.handleScrollToElement = this.handleScrollToElement.bind(this);
   }
+
+  handleScrollToElement(event) {
+    const scrollNode = ReactDOM.findDOMNode(this.refs.profile)
+      scrollNode.scrollIntoView({behavior: "smooth", block: "start"});
+     }
+
+  componentDidMount() {
+    this.handleScrollToElement();
+  }
+
   render() {
     return (
                 // START OF LANDING PAGE
-      <div data-aos ="fade-down" data-aos-easing="linear" data-aos-duration="750" className="Landing">
-          
+      <div data-aos ="fade-down" data-aos-easing="linear" data-aos-duration="750" className="Landing">  
           <header id="Landing">
             <h1 style ={{color:'white'}}>Melvin Tham</h1>
               <p style ={{color:'white'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.</p>
-
           </header>
           <div className="downArrow">
-          <a href="#profile" className="scroll-down">	
+          <a href="#profile" className="scroll-down" onClick={this.handleScrollToElement}>	
 				        <span className="glyphicon glyphicon-chevron-down "></span>
 			        </a>
           </div>
-          
-          
+
+      
+
                  {/* PROFILE SECTION */}
 
-        <div id ="Profile" style={{background:'F4F4F4'}}>
+        <div id ="Profile" ref="profile" style={{background:'F4F4F4'}}>
         
           <div className="flexCenter">
               <h1>Profile</h1>
@@ -66,6 +76,8 @@ class Home extends React.Component {
     </div>
   </div>
 
+
+      <div style={{height:'1000px',background:'pink'}}></div>
   
   
            
