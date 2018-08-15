@@ -124,7 +124,14 @@ img{
 	animation-direction: normal;
 }
 
-
+.pageButtons{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
