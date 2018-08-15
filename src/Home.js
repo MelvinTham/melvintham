@@ -10,18 +10,20 @@ import Typography from '@material-ui/core/Typography';
 import nyc from './images/nyc.jpg';
 import melvin from './images/Melvin.JPG';
 import {Grid,Row,Col,Clearfix,Image} from 'react-bootstrap';
-import {Avatar} from '@material-ui/core';
-
+import {Avatar,IconButton} from '@material-ui/core';
+import Close from '@material-ui/icons/Cancel';
 
 class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state={
       page : '',
+     
     };
+    console.log("page state is " + this.state.page);
     this.handleScrollToElement = this.handleScrollToElement.bind(this);
   }
-
+  
   handleScrollToElement(event) {
     const scrollNode = ReactDOM.findDOMNode(this.refs.profile)
       scrollNode.scrollIntoView({behavior: "smooth", block: "start"});
@@ -32,6 +34,7 @@ class Home extends React.Component {
   }
 
   render() {
+    
     return (
                 // START OF LANDING PAGE
       <div data-aos ="fade-down" data-aos-easing="linear" data-aos-duration="750" className="Landing">  
@@ -75,11 +78,27 @@ class Home extends React.Component {
           {/* Buttons For Different Pages */}
 
     <div className="pageButtons">
-     <Button variant="outlined" style={{margin:'10px 10px'}}>hello</Button>
-     <Button variant="outlined" style={{margin:'10px 10px'}}>hello</Button>
-     <Button variant="outlined" style={{margin:'10px 10px'}}>hello</Button>
-    </div>
+     <Button variant="outlined" style={{margin:'10px 10px'}}  onClick={()=>{this.setState({ page:'experience'})}}>Experience</Button>
+     <Button variant="outlined" style={{margin:'10px 10px'}}>Skills</Button>
+     <Button variant="outlined" style={{margin:'10px 10px'}}>Projects</Button>
+     
+     {
+         this.state.content !== ''?
+          <IconButton data-aos="fade-left" className="social-btn" onClick={()=>{this.setState({page:''})}}>
+            <Close />
+           </IconButton>
+           :null
+          
+     }
 
+    </div>
+    {
+                                        this.state.page !== ''?
+                                        <Typography variant="headline" className="flexCenter" style={{ marginTop: 15}}>
+                                                {this.state.page.toUpperCase()}
+                                        </Typography>:
+                                        null
+                                }
       <div style={{height:'1000px',background:'green'}}></div>
   
   
