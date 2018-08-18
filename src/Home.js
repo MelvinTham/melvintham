@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './Home.css';
+import Contact from './Contact'
+import Skills from './Skills';
+import Projects from './Projects';
+import Experience from './Experience';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import nyc from './images/nyc.jpg';
 import melvin from './images/Melvin.JPG';
 import {Grid,Row,Col,Clearfix,Image} from 'react-bootstrap';
 import {Avatar,IconButton} from '@material-ui/core';
 import Close from '@material-ui/icons/Cancel';
+
 
 class Home extends React.Component {
   constructor(props) {
@@ -78,28 +82,39 @@ class Home extends React.Component {
           {/* Buttons For Different Pages */}
 
     <div className="pageButtons">
-     <Button variant="outlined" style={{margin:'10px 10px'}}  onClick={()=>{this.setState({ page:'experience'})}}>Experience</Button>
-     <Button variant="outlined" style={{margin:'10px 10px'}}>Skills</Button>
-     <Button variant="outlined" style={{margin:'10px 10px'}}>Projects</Button>
+     <Button variant="outlined" style={{margin:'10px 10px'}} onClick={()=>{this.setState({ page:'Experience'})}}>Experience</Button>
+     <Button variant="outlined" style={{margin:'10px 10px'}} onClick={()=>{this.setState({ page:'Skills'})}}>Skills</Button>
+     <Button variant="outlined" style={{margin:'10px 10px'}} onClick={()=>{this.setState({ page:'Projects'})}}>Projects</Button>
+     <Button variant="outlined" style={{margin:'10px 10px'}} onClick={()=>{this.setState({ page:'Contact'})}}>Contact Me</Button>
      
      {
-         this.state.content !== ''?
-          <IconButton data-aos="fade-left" className="social-btn" onClick={()=>{this.setState({page:''})}}>
-            <Close />
+         this.state.page !== ''?
+          <IconButton data-aos="fade-left" onClick={()=>{this.setState({page:''})}}>
+            <Close/>
            </IconButton>
-           :null
-          
+           : null
      }
 
     </div>
     {
-                                        this.state.page !== ''?
-                                        <Typography variant="headline" className="flexCenter" style={{ marginTop: 15}}>
-                                                {this.state.page.toUpperCase()}
-                                        </Typography>:
-                                        null
-                                }
-      <div style={{height:'1000px',background:'green'}}></div>
+      this.state.page !== ''?
+      <Typography variant="headline" className="flexCenter" style={{ marginTop: 15}}>
+      {this.state.page.toUpperCase()}
+        </Typography>: null
+
+    }
+    {
+      this.state.page === 'Experience'?
+      <Experience />:
+      this.state.page === 'Skills'?
+      <Skills />:
+      this.state.page === 'Projects'?
+      <Projects />:
+      this.state.page === 'Contact'?
+      <Contact />:null
+    }
+      
+      <div style={{height:'200px'}}></div>
   
   
            
