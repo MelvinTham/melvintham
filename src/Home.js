@@ -16,7 +16,8 @@ import {Grid,Row,Col,Clearfix,Image} from 'react-bootstrap';
 import {Avatar,IconButton} from '@material-ui/core';
 import Close from '@material-ui/icons/Cancel';
 import Work from '@material-ui/icons/Work';
-
+import Project from '@material-ui/icons/Build';
+import Code from '@material-ui/icons/Code';
 
 class Home extends React.Component {
   constructor(props) {
@@ -85,24 +86,25 @@ class Home extends React.Component {
     <div className="pageButtons">
      <Button variant="outlined" 
              size={this.state.content !== ''?'small':'medium'} 
-             style={{margin:'5px 5px',color:'#a6ff4d'}} 
-             onClick={()=>{this.setState({ page:'Experience'})}}>
+             style={{margin:'5px 5px',color:' #004d99'}} 
+             onClick={()=>{this.setState({ page:'Experience', color:'#004d99'})}}>
              Experience<Work style={{marginLeft:7}}/>
      </Button>
      <Button variant="outlined" 
              size={this.state.content !== ''?'small':'medium'} 
-             style={{margin:'5px 5px',color:'#004d99'}} 
-             onClick={()=>{this.setState({ page:'Skills'})}}>
-             Skills
+             style={{margin:'5px 5px',color:'#DAA520'}} 
+             onClick={()=>{this.setState({ page:'Skills', color:'#DAA520'})}}>
+             Skills<Code style={{marginLeft:7}}/>
     </Button>
     <Button variant="outlined" 
              size={this.state.content !== ''?'small':'medium'} 
-             style={{margin:'5px 5px'}} onClick={()=>{this.setState({ page:'Projects'})}}>
-             Projects
+             style={{margin:'5px 5px',color:'#e60000'}} 
+             onClick={()=>{this.setState({ page:'Projects',color:'#e60000'})}}>
+             Projects<Project style={{marginLeft:7}}/>
     </Button>
      {
          this.state.page !== ''?
-          <IconButton data-aos="fade-left" onClick={()=>{this.setState({page:''})}}>
+          <IconButton data-aos="fade-left" onClick={()=>{this.setState({page:''})}} style={{color:this.state.color}}>
             <Close/>
            </IconButton>
            : null
@@ -111,7 +113,7 @@ class Home extends React.Component {
     </div>
     {
       this.state.page !== ''?
-      <Typography variant="headline" className="flexCenter" style={{ marginTop: 15}}>
+      <Typography variant="headline" className="flexCenter" style={{ marginTop: "15px",color:this.state.color}} >
       {this.state.page.toUpperCase()}
         </Typography>: null
 
@@ -127,8 +129,8 @@ class Home extends React.Component {
       <Contact />:null
     }
       
-      <div className="flexCenter" style={{height:'200px',backgroundColor:'#222222'}}>
-        <h1 style={{color:'white'}}>Contact Me!</h1>
+      <div id="Contact" className="flexCenter" style={{height:'200px',backgroundColor:'#222222',marginTop:"40px"}}>
+        <Typography variant="display1" style={{color:'white'}}>Contact Me!</Typography>
       </div>
   
   

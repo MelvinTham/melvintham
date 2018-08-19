@@ -143,16 +143,25 @@ img{
   html{
     font-size: 12px;
   }
+  .experience, .projects, .skills{
+    width: 100% !important;
+  }
 }
 @media screen and (min-width: 320px){
   html{
     font-size: 12px;
+  }
+  .experience, .projects, .skills{
+    width: 100% !important;
   }
 }
 
 @media screen and (min-width: 500px){
     html{
       font-size: 14px;
+    }
+    .experience, .projects, .skills{
+      width: 100% !important;
     }
   }
   @media screen and (min-width: 570px){
