@@ -15,6 +15,7 @@ import melvin from './images/Melvin.JPG';
 import {Grid,Row,Col,Clearfix,Image} from 'react-bootstrap';
 import {Avatar,IconButton} from '@material-ui/core';
 import Close from '@material-ui/icons/Cancel';
+import Work from '@material-ui/icons/Work';
 
 
 class Home extends React.Component {
@@ -22,7 +23,7 @@ class Home extends React.Component {
     super(props);
     this.state={
       page : '',
-     
+      color : '',
     };
     console.log("page state is " + this.state.page);
     this.handleScrollToElement = this.handleScrollToElement.bind(this);
@@ -41,13 +42,13 @@ class Home extends React.Component {
     
     return (
                 // START OF LANDING PAGE
-      <div data-aos ="fade-down" data-aos-easing="linear" data-aos-duration="750" className="Landing">  
+      <div data-aos ="fade-up" data-aos-easing="linear" data-aos-duration="750" className="Landing">  
           <header id="Landing">
             <h1 style ={{color:'white'}}>Melvin Tham</h1>
               <p style ={{color:'white'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.</p>
           </header>
           <div className="downArrow">
-          <a href="#profile" className="scroll-down" onClick={this.handleScrollToElement}>	
+          <a  className="scroll-down" onClick={this.handleScrollToElement}>	
 				        <span className="glyphicon glyphicon-chevron-down "></span>
 			        </a>
           </div>
@@ -82,11 +83,23 @@ class Home extends React.Component {
           {/* Buttons For Different Pages */}
 
     <div className="pageButtons">
-     <Button variant="outlined" style={{margin:'10px 10px'}} onClick={()=>{this.setState({ page:'Experience'})}}>Experience</Button>
-     <Button variant="outlined" style={{margin:'10px 10px'}} onClick={()=>{this.setState({ page:'Skills'})}}>Skills</Button>
-     <Button variant="outlined" style={{margin:'10px 10px'}} onClick={()=>{this.setState({ page:'Projects'})}}>Projects</Button>
-     <Button variant="outlined" style={{margin:'10px 10px'}} onClick={()=>{this.setState({ page:'Contact'})}}>Contact Me</Button>
-     
+     <Button variant="outlined" 
+             size={this.state.content !== ''?'small':'medium'} 
+             style={{margin:'5px 5px',color:'#a6ff4d'}} 
+             onClick={()=>{this.setState({ page:'Experience'})}}>
+             Experience<Work style={{marginLeft:7}}/>
+     </Button>
+     <Button variant="outlined" 
+             size={this.state.content !== ''?'small':'medium'} 
+             style={{margin:'5px 5px',color:'#004d99'}} 
+             onClick={()=>{this.setState({ page:'Skills'})}}>
+             Skills
+    </Button>
+    <Button variant="outlined" 
+             size={this.state.content !== ''?'small':'medium'} 
+             style={{margin:'5px 5px'}} onClick={()=>{this.setState({ page:'Projects'})}}>
+             Projects
+    </Button>
      {
          this.state.page !== ''?
           <IconButton data-aos="fade-left" onClick={()=>{this.setState({page:''})}}>
@@ -114,7 +127,9 @@ class Home extends React.Component {
       <Contact />:null
     }
       
-      <div style={{height:'200px'}}></div>
+      <div className="flexCenter" style={{height:'200px',backgroundColor:'#222222'}}>
+        <h1 style={{color:'white'}}>Contact Me!</h1>
+      </div>
   
   
            
