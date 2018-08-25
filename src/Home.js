@@ -18,7 +18,7 @@ import Close from '@material-ui/icons/Cancel';
 import Work from '@material-ui/icons/Work';
 import Project from '@material-ui/icons/Build';
 import Code from '@material-ui/icons/Code';
-
+import Camera from '@material-ui/icons/CameraAlt';
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -98,9 +98,15 @@ class Home extends React.Component {
     </Button>
     <Button variant="outlined" 
              size={this.state.content !== ''?'small':'medium'} 
-             style={{margin:'5px 5px',color:'#e60000'}} 
-             onClick={()=>{this.setState({ page:'Projects',color:'#e60000'})}}>
+             style={{margin:'5px 5px',color:'#7f4145'}} 
+             onClick={()=>{this.setState({ page:'Projects',color:'#7f4145'})}}>
              Projects<Project style={{marginLeft:7}}/>
+    </Button>
+    <Button variant="outlined" 
+             size={this.state.content !== ''?'small':'medium'} 
+             style={{margin:'5px 5px',color:'#006e6d'}} 
+             onClick={()=>{this.setState({ page:'Photos',color:'#006e6d'})}}>
+             Photos<Camera style={{marginLeft:7}}/>
     </Button>
      {
          this.state.page !== ''?
@@ -128,12 +134,13 @@ class Home extends React.Component {
       this.state.page === 'Contact'?
       <Contact />:null
     }
-      
-      <div id="Contact" className="flexCenter" style={{height:'200px',backgroundColor:'#222222',marginTop:"40px"}}>
+    <div id="Contact">
+      <div className="flexCenter" style={{height:'100px',backgroundColor:'#222222',marginTop:"40px"}}>
         <Typography variant="display1" style={{color:'white'}}>Contact Me!</Typography>
       </div>
-  
-  
+
+      <div id="footer" style={{height:'100px',backgroundColor:'#222222'}}></div>
+    </div>
            
       </div>
       

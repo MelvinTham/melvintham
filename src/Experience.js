@@ -14,7 +14,7 @@ class Experience extends React.Component {
 
         return(
             <div className="flexCenter" data-aos ="fade-up">
-                <Card className="experience">
+                <Card className="experience" zDepth={3}>
                     <CardContent>
                     <Typography gutterBottom variant="headline" component="h3">
                      InterSoft Associates
