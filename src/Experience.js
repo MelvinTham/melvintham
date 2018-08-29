@@ -21,10 +21,8 @@ class Experience extends React.Component {
                     </Typography>
                     <img src={InterSoft} className="workLogo"/>
                     <CardHeader subheader={<span><strong>Software Developer Intern</strong><br />February 2018 To August 2018</span> } />
-                    <Typography component="p">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                     across all continents except Antarctica
-                     </Typography>
+                    <Typography component="p">Developed new screens for software programs using MVVM design pattern that clients use on daily basis. Applied problem solving techniques to debug legacy systems. 
+                        </Typography>
                     </CardContent>
                 </Card>
             </div>

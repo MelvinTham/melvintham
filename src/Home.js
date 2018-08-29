@@ -139,7 +139,7 @@ class Home extends React.Component {
         <Typography variant="display1" style={{color:'white'}}>Contact Me!</Typography>
       </div>
 
-      <div id="footer" style={{height:'100px',backgroundColor:'#222222'}}></div>
+      <div id="footer" style={{height:'200px',backgroundColor:'#222222'}}></div>
     </div>
            
       </div>
