@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './Home.css';
-import Contact from './Contact'
+import Photos from './Photos'
 import Skills from './Skills';
 import Projects from './Projects';
 import Experience from './Experience';
@@ -26,7 +26,6 @@ class Home extends React.Component {
       page : '',
       color : '',
     };
-    console.log("page state is " + this.state.page);
     this.handleScrollToElement = this.handleScrollToElement.bind(this);
   }
   
@@ -131,8 +130,8 @@ class Home extends React.Component {
       <Skills />:
       this.state.page === 'Projects'?
       <Projects />:
-      this.state.page === 'Contact'?
-      <Contact />:null
+      this.state.page === 'Photos'?
+      <Photos />:null
     }
     <div id="Contact">
       <div className="flexCenter" style={{height:'100px',backgroundColor:'#222222',marginTop:"40px"}}>
