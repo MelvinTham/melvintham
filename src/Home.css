@@ -144,7 +144,7 @@ img{
 
 @media screen and (min-width: 100px){
   html{
-    font-size: 12px;
+    font-size: 10px;
   }
   .experience, .projects, .skills{
     width: 100% !important;

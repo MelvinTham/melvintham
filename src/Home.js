@@ -87,25 +87,25 @@ class Home extends React.Component {
              size={this.state.content !== ''?'small':'medium'} 
              style={{margin:'5px 5px',color:' #004d99'}} 
              onClick={()=>{this.setState({ page:'Experience', color:'#004d99'})}}>
-             Experience<Work style={{marginLeft:7}}/>
+             Experience<Work style={{marginLeft:5}}/>
      </Button>
      <Button variant="outlined" 
              size={this.state.content !== ''?'small':'medium'} 
              style={{margin:'5px 5px',color:'#DAA520'}} 
              onClick={()=>{this.setState({ page:'Skills', color:'#DAA520'})}}>
-             Skills<Code style={{marginLeft:7}}/>
+             Skills<Code style={{marginLeft:5}}/>
     </Button>
     <Button variant="outlined" 
              size={this.state.content !== ''?'small':'medium'} 
              style={{margin:'5px 5px',color:'#7f4145'}} 
              onClick={()=>{this.setState({ page:'Projects',color:'#7f4145'})}}>
-             Projects<Project style={{marginLeft:7}}/>
+             Projects<Project style={{marginLeft:5}}/>
     </Button>
     <Button variant="outlined" 
              size={this.state.content !== ''?'small':'medium'} 
              style={{margin:'5px 5px',color:'#006e6d'}} 
              onClick={()=>{this.setState({ page:'Photos',color:'#006e6d'})}}>
-             Photos<Camera style={{marginLeft:7}}/>
+             Photos<Camera style={{marginLeft:5}}/>
     </Button>
      {
          this.state.page !== ''?

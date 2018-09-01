@@ -4,52 +4,60 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import melvin from './images/Melvin.JPG';
 import * as firebase from 'firebase';
-
+import  './Photos.css';
 class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      imageData:'',
+      items:[],
     }
+    console.log(this.state.imageData);
+    console.log(this.state.items)
 }
-
-  
-   
+ 
   
   componentDidMount() {
-    const fbimages = firebase.storage().ref('images/');
-    const image = fbimages.child('Doge2.jpg');
-    image.getDownloadURL().then((url)=>{
+    
+
+    // firebase.database().ref().child('imageURL/').once('value').then((snap)=>{
+    //   this.setState({
+    //     imageData: snap.val().image,
+    //   })
+    // })
+    
+    const itemsRef = firebase.database().ref('imageURL');
+    itemsRef.on('value',(snap)=>{
+      let items = snap.val();
+      let newState =[];
+      for(let item in items){
+        newState.push({
+          url: items[item].image
+        });
+      }
       this.setState({
-        imageData:url,
+        items:newState,
       })
     })
-  console.log(this.state.imageData);
+  console.log(this.state.items)
   }
 
 
     render() {
-          const tilesData = [
-            {
-              img: 'https://images-na.ssl-images-amazon.com/images/I/811fGdwqf%2BL._SX355_.jpg',
-              title: 'Breakfast',
-              author: 'jill111',
-            },
-            
-          ];
-
+          
         return(
-            <div >
-            <GridList
-              style={{flexWrap: 'nowrap'}} cols={2.5} data-aos ="fade-up">
-              {tilesData.map((tile) => (
-                <GridListTile
-                  key={tile.img}>
-                  <img src={tile.img} />
-                </GridListTile>
-              ))}
+            <div className="flexCenter">
+            <GridList style={{flexWrap: 'nowrap'}} imgFullHeight imgFullWidth rows={1} cols={5} >
+              {
+              this.state.items.map((data)=>{
+                  return(
+                    <GridListTile >
+                      <img className="hover01" src={data.url} alt="hello" />
+                    </GridListTile>
+                  );
+                })
+              }
             </GridList>
-            <img src = {this.state.imageData}></img>
+          
             </div>
         );
     }
