@@ -46,12 +46,12 @@ class Contact extends React.Component {
           
         return(
             <div className="flexCenter">
-            <GridList style={{flexWrap: 'nowrap'}} imgFullHeight imgFullWidth rows={1} cols={5} >
+            <GridList style={{flexWrap: 'nowrap',marginTop:"15px"}} imgFullHeight imgFullWidth rows={1} cols={6} >
               {
               this.state.items.map((data)=>{
                   return(
-                    <GridListTile >
-                      <img className="hover01" src={data.url} alt="hello" />
+                    <GridListTile style={{width:'100%',height:'auto'}}>
+                      <img  src={data.url} alt="hello" />
                     </GridListTile>
                   );
                 })
