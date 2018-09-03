@@ -9,6 +9,7 @@
 .cardSize{
     width:600px;
     height:auto;
+    margin-top: 20px;
   
 }
 .cardTitle{
@@ -18,3 +19,17 @@
     text-align: center;
     flex-direction:column;
 }
+.flexRow{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction:row;
+  }
+
+
+  @media (max-width: 500px){
+    .cardSize{
+            width: 100% !important; 
+    }
+  }
