@@ -150,7 +150,7 @@ class Home extends React.Component {
       </div>
       <div className="flexRow" style={{backgroundColor:'#222222'}}>
        <a href = "https://www.linkedin.com/in/melvin-tham/"  target="_blank"><i className = "fab fa-linkedin fa-4x" style = {{color: "rgb(0, 119, 181)",padding:'3px 3px',margin:'3px 3px'}}></i></a>
-       <a href = "https://github.com/MelvinTham"  target="_blank"><i className = "fab fa-github-square fa-4x " style = {{color: "#131418",padding:'3px 3px',margin:'3px 3px'}}></i></a>
+       <a href = "https://github.com/MelvinTham"  target="_blank"><i className = "fab fa-github-square fa-4x " style = {{color: "black",padding:'3px 3px',margin:'3px 3px'}}></i></a>
        <a href = "mailto:melvintham1997@gmail.com"  target="_blank"><i className = "fas fa-envelope fa-4x" style = {{color: "white",padding:'3px 3px',margin:'3px 3px'}}></i></a>
        <a href = "https://www.instagram.com/tham_melvin/" target="_blank"><i className = "fab fa-instagram  fa-4x" style = {{color:"#e4405f",padding:'3px 3px',margin:'3px 3px'}}></i></a>
             </div>

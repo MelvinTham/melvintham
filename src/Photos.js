@@ -12,13 +12,12 @@ class Contact extends React.Component {
     this.state = {
       items:[],
     }
-    console.log(this.state.imageData);
+   
     console.log(this.state.items)
 }
  
   
   componentDidMount() {
-    
     const itemsRef = firebase.database().ref('imageURL');
     itemsRef.on('value',(snap)=>{
       let items = snap.val();
