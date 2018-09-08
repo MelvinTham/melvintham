@@ -45,6 +45,14 @@ body{
   flex-direction:column;
 }
 
+.flexRow{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction:row;
+}
+
 .divider{
   border-top: 1px solid #8c8b8b !important;
   width:50%;
@@ -129,6 +137,14 @@ img{
 	animation-direction: normal;
 }
 
+.ani{
+  animation-name: colorSwitch;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
 .pageButtons{
   margin-top: 15px;
   display: flex;
@@ -146,16 +162,16 @@ img{
   html{
     font-size: 10px;
   }
-  .experience, .projects, .skills{
+  .experience, .projects, .skills,.photos,.contact{
     width: 100% !important;
   }
- 
+  
 }
 @media screen and (min-width: 320px){
   html{
     font-size: 12px;
   }
-  .experience, .projects, .skills{
+  .experience, .projects, .skills,.photos,.contact{
     width: 100% !important;
   }
  
@@ -165,7 +181,7 @@ img{
     html{
       font-size: 14px;
     }
-    .experience, .projects, .skills{
+    .experience, .projects, .skills,.photos,.contact{
       width: 100% !important;
     }
    
@@ -174,6 +190,7 @@ img{
     html{
       font-size: 15px;
     }
+   
   }
   @media screen and (min-width: 620px){
     html{
@@ -228,5 +245,15 @@ img{
       padding-top: 20px;
     }
   }
+  @keyframes colorSwitch {
+    0%   {color: #000099;}
+    15%  {color: red;}
+    25%  {color: yellow;}
+    50%  {color: #DAA520;}
+    65%  {color: silver;}
+    75% {color: #00FF00;}
+    90% {color: black;}
+    100% {color: white;}
+}
   
   

@@ -13,7 +13,7 @@ class Experience extends React.Component {
        
 
         return(
-            <div className="flexCenter" data-aos ="flip-up">
+            <div className="flexCenter" data-aos ="flip-up" data-aos-offset="300" data-aos-duration="500">
                 <Card className="experience" zDepth={3}>
                     <CardContent>
                     <Typography gutterBottom variant="headline" component="h3">

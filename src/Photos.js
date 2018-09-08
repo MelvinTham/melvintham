@@ -39,7 +39,7 @@ class Contact extends React.Component {
     render() {
           
         return(
-            <div className="flexCenter" >
+            <div className="flexCenter photos" >
             <GridList style={{flexWrap: 'nowrap',marginTop:"20px"}} imgFullHeight imgFullWidth rows={1} cols={6} >
               {
               this.state.items.map((data)=>{

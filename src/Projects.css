@@ -37,11 +37,11 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     font-family: 'Roboto', sans-serif;
-    font-size:20px;
+    font-size:15px;
 }
 
 .projects:hover .overlay {
     opacity: 1;
 }
 
- 
+  

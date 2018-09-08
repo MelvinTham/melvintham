@@ -4,11 +4,12 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import melvin from './images/Melvin.JPG';
+import pizza from './images/Pizza.PNG';
+import fft from './images/FFT.PNG';
+import landing from './images/landing.PNG';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
-
 import './Home.css';
 import './Projects.css';
 
@@ -16,60 +17,57 @@ class Projects extends React.Component {
     
     render() {
         return(
-            <div className="flexCenter">
+            <div className="flexCenter" data-aos=''>
              <Grid container spacing={24} className="flexRow" style= {{marginTop:'15px'}}>
                 <Grid item xs={12} sm={6}>
-                     <Paper className="projects">
-                        <img src ={melvin} alt = "melvin" className="image"/>
-                        <Typography className="flexRow" variant=" display4" style={{fontSize:"50px", color:'black'}}>Pizza Ordering System  </Typography>
-                        <div className = "overlay">
-                             <h1 className = "text flexCenter">
+                     <Paper className="projects" data-aos='fade-up'  data-aos-anchor-placement="center-bottom">
+                        <img src ={pizza} alt = "pizza" className="image"/>
+                        <Typography className="flexRow" variant=" display4" style={{fontSize:"50px", color:'black'}}>Weirdoughs </Typography>
+                        <div className = "overlay flexCenter">
+                             <p className = "text ">
                              <br/>
                                 This purpose of this project was to create a web-based pizza ordering system. 
-                                It features an authentication system where chefs, deliverer, and customers can sign in and see their personal ratings, as well as give ratings of the pizzeria.
-                                The project makes use of Google Maps API to find pizzerias near the user and gives the user the option to add any pizza store and was created with ReactJS and Firebase.
-                                
+                                It makes use of Google Map's API to let users search for a pizzeria and add menu items to their cart. 
+                                Uses a rating system like Yelp to determine status. 
+                                Weirdoughs was built with ReactJS and Firebase.                      
                             <div className="flexRow">
-                            <Button variant="contained" color="primary" style={{padding:'5px 5px',margin:'5px 5px', marginTop:'15px'}} href = "https://github.com/ayushyamitabh/PizzaOrderSystem">GitHub</Button>
-                            <Button variant="contained" color="secondary" style={{padding:'5px 5px',margin:'5px 5px', marginTop:'15px'}} href = "https://pos-tagmhaxt.firebaseapp.com/">View</Button>
+                            <Button variant="contained" color="primary" style={{padding:'5px 5px',margin:'5px 5px', marginTop:'15px'}} href = "https://github.com/ayushyamitabh/PizzaOrderSystem"  target="_blank">GitHub</Button>
+                            <Button variant="contained" color="secondary" style={{padding:'5px 5px',margin:'5px 5px', marginTop:'15px'}} href = "https://pos-tagmhaxt.firebaseapp.com/"  target="_blank">View</Button>
                             </div>
-                         </h1>
+                         </p>
                     </div>
                     </Paper>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                <Paper className="projects">
-                        <img src ={melvin} alt = "melvin" className="image"/>
-                        <Typography className="flexRow" variant=" display4" style={{fontSize:"50px", color:'black'}}>FoodForThought </Typography>
-                        <div className = "overlay">
-                             <h1 className = "text flexCenter">
+                <Paper className="projects" data-aos='fade-up' data-aos-offset="500" data-aos-duration="500">
+                        <img src ={fft} alt = "fft" className="image"/>
+                        <Typography className="flexRow" variant=" display4" style={{fontSize:"50px", color:'black'}}>Food For Thought </Typography>
+                        <div className = "overlay flexCenter">
+                             <p className = "text ">
                              <br/>
-                                This project was my team's way of creating a website like Yelp, but for pizzas only. 
-                                The website implements Google Maps API to find pizzerias near you. If the pizzeria is 
-                                partnered with us, then upon selection, the page will redirect to the menu page. 
-                                In the menu page, the user would then be able to add items to their cart and check out. 
-                                This website also implements a blacklist and a registered users function, where blacklisted users are 
-                                barred from purchasing and registered users receives discounts.
-                            <a href = "https://github.com/buenoluis007/Krusty_Krab_Pizza">Check it out on GitHub</a>
-                         </h1>
+                                FoodForThought is a website that allows users to find food recipes based off their limited ingredients in their refrigerators.
+                                The user simply lists the ingredients they have in their refrigerator, and then it will display all of the relevant recipes based off the list.
+                                FoodForThought was built with Spoonacular recipe-food-nutrition API, ReactJS, and Firebase.
+                            <div className="flexRow">
+                            <Button variant="contained" color="primary" style={{padding:'5px 5px',margin:'5px 5px', marginTop:'15px'}} href = "https://github.com/MelvinTham/team-b"  target="_blank">GitHub</Button>
+                            </div>
+                         </p>
                     </div>
                     </Paper>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                <Paper className="projects">
-                        <img src ={melvin} alt = "melvin" className="image"/>
-                        <Typography className="flexRow" variant=" display4" style={{fontSize:"50px", color:'black'}}>Interactive Website </Typography>
-                        <div className = "overlay">
-                             <h1 className = "text flexCenter">
+                <Paper className="projects" data-aos='fade-up' data-aos-offset="500" data-aos-duration="500">
+                        <img src ={landing} alt = "pizza" className="image"/>
+                        <Typography className="flexRow" variant=" display4" style={{fontSize:"50px", color:'black'}}>Interactive Resume </Typography>
+                        <div className = "overlay flexCenter">
+                             <p className = "text ">
                              <br/>
-                                This project was my team's way of creating a website like Yelp, but for pizzas only. 
-                                The website implements Google Maps API to find pizzerias near you. If the pizzeria is 
-                                partnered with us, then upon selection, the page will redirect to the menu page. 
-                                In the menu page, the user would then be able to add items to their cart and check out. 
-                                This website also implements a blacklist and a registered users function, where blacklisted users are 
-                                barred from purchasing and registered users receives discounts.
-                            <a href = "https://github.com/buenoluis007/Krusty_Krab_Pizza">Check it out on GitHub</a>
-                         </h1>
+                               My interactive portfolio website :) 
+                            <div className="flexRow">
+                            <Button variant="contained" color="primary" style={{padding:'5px 5px',margin:'5px 5px', marginTop:'15px'}} href = "https://github.com/MelvinTham/melvintham"  target="_blank">GitHub</Button>
+                            <Button variant="contained" color="secondary" style={{padding:'5px 5px',margin:'5px 5px', marginTop:'15px'}} href = "http://melvintham.com"  target="_blank">View</Button>
+                            </div>
+                         </p>
                     </div>
                     </Paper>
                 </Grid>
