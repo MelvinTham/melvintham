@@ -5,6 +5,7 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 import melvin from './images/Melvin.JPG';
 import * as firebase from 'firebase';
 import  './Photos.css';
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -17,13 +18,6 @@ class Contact extends React.Component {
  
   
   componentDidMount() {
-    
-
-    // firebase.database().ref().child('imageURL/').once('value').then((snap)=>{
-    //   this.setState({
-    //     imageData: snap.val().image,
-    //   })
-    // })
     
     const itemsRef = firebase.database().ref('imageURL');
     itemsRef.on('value',(snap)=>{
@@ -45,7 +39,7 @@ class Contact extends React.Component {
     render() {
           
         return(
-            <div className="flexCenter">
+            <div className="flexCenter" >
             <GridList style={{flexWrap: 'nowrap',marginTop:"20px"}} imgFullHeight imgFullWidth rows={1} cols={6} >
               {
               this.state.items.map((data)=>{

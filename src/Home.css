@@ -149,6 +149,7 @@ img{
   .experience, .projects, .skills{
     width: 100% !important;
   }
+ 
 }
 @media screen and (min-width: 320px){
   html{
@@ -157,6 +158,7 @@ img{
   .experience, .projects, .skills{
     width: 100% !important;
   }
+ 
 }
 
 @media screen and (min-width: 500px){
@@ -166,6 +168,7 @@ img{
     .experience, .projects, .skills{
       width: 100% !important;
     }
+   
   }
   @media screen and (min-width: 570px){
     html{
