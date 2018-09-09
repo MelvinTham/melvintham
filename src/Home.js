@@ -51,8 +51,8 @@ class Home extends React.Component {
                 // START OF LANDING PAGE
       <div data-aos ="fade-up" data-aos-easing="linear" data-aos-duration="750" className="Landing" ref="landing">  
           <header id="Landing">
-            <h1 style ={{color:'White',fontSize:'100px', marginBottom:'275px'}} className="ani">Melvin Tham</h1>
- 
+            <h1 style ={{color:'White',fontSize:'100px'}} className="newFont" >Melvin Tham</h1>
+            <hr className="divider"/>
           </header>
           <div className="downArrow">
           <a  className="scroll-down" onClick={this.handleScrollToElement}>	

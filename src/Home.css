@@ -137,14 +137,6 @@ img{
 	animation-direction: normal;
 }
 
-.ani{
-  animation-name: colorSwitch;
-	animation-duration: 6s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: normal;
-}
-
 .pageButtons{
   margin-top: 15px;
   display: flex;
@@ -154,8 +146,14 @@ img{
   align-items: center;
   text-align: center;
 }
-
-
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
+@import url('https://fonts.googleapis.com/css?family=Faster+One');
+@import url('https://fonts.googleapis.com/css?family=Nosifer');
+@import url('https://fonts.googleapis.com/css?family=Megrim');
+@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru');
+.newFont{
+  font-family: 'Kosugi Maru','Roboto', sans-serif;
+}
 
 
 @media screen and (min-width: 100px){
@@ -245,15 +243,5 @@ img{
       padding-top: 20px;
     }
   }
-  @keyframes colorSwitch {
-    0%   {color: #000099;}
-    15%  {color: red;}
-    25%  {color: yellow;}
-    50%  {color: #DAA520;}
-    65%  {color: silver;}
-    75% {color: #00FF00;}
-    90% {color: black;}
-    100% {color: white;}
-}
-  
+
   
