@@ -2,6 +2,7 @@
   margin:0;
   padding:0;
 }
+
 body{
   margin:0;
   font-family: Roboto;
@@ -147,12 +148,13 @@ img{
   text-align: center;
 }
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
-@import url('https://fonts.googleapis.com/css?family=Faster+One');
-@import url('https://fonts.googleapis.com/css?family=Nosifer');
-@import url('https://fonts.googleapis.com/css?family=Megrim');
-@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru');
+
 .newFont{
-  font-family: 'Kosugi Maru','Roboto', sans-serif;
+  font-family: 'Libre Barcode 128 Text','Roboto', sans-serif;
+  font-size: 150px !important;
+}
+aboutFont{
+  font-family: 'arial','Roboto', sans-serif;
 }
 
 
@@ -163,6 +165,7 @@ img{
   .experience, .projects, .skills,.photos,.contact{
     width: 100% !important;
   }
+
   
 }
 @media screen and (min-width: 320px){
@@ -172,7 +175,7 @@ img{
   .experience, .projects, .skills,.photos,.contact{
     width: 100% !important;
   }
- 
+
 }
 
 @media screen and (min-width: 500px){
@@ -182,7 +185,7 @@ img{
     .experience, .projects, .skills,.photos,.contact{
       width: 100% !important;
     }
-   
+    
   }
   @media screen and (min-width: 570px){
     html{

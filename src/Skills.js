@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Skills.css';
 import './Home.css';
 import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Chip from '@material-ui/core/Chip';

@@ -5,14 +5,9 @@ import Photos from './Photos'
 import Skills from './Skills';
 import Projects from './Projects';
 import Experience from './Experience';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
-import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import melvin from './images/Melvin.JPG';
-import {Grid,Row,Col,Clearfix,Image} from 'react-bootstrap';
 import {Avatar,IconButton} from '@material-ui/core';
 import Close from '@material-ui/icons/Cancel';
 import Work from '@material-ui/icons/Work';
@@ -71,8 +66,9 @@ class Home extends React.Component {
            <div className="row"> 
             <div className="col-md-4" style ={{padding:'20px 20px'}}>
               <h2>About me</h2>
-              <p> I am currently studying in university. Learning how to be a well rounded developer.
-                I like to learn new things and working with teams. As they say, <b>"Teamwork makes the dream work".</b> You might be able to bribe me with a bowl of ramen.<br/> :)</p> 
+              <p> Hello There! My name is Melvin Tham and welcome to my interactive website. I am currently in university, 
+                  learning how to be a well rounded developer.
+                  I like to learn new things and working with others. If you'd like to connect with me, feel free to click on the buttons below!</p> 
           </div>
       <div className="col-md-4" style ={{padding:'20px 20px'}}>
       <div className="flexCenter">
@@ -83,7 +79,7 @@ class Home extends React.Component {
       <h2>Details</h2>
         <p style ={{marginBottom:'5px'}}><b>Education:</b><br/> The City College Of New York<br/></p>
         <p style ={{marginBottom:'5px'}}><b>Major:</b><br/> Computer Science <br/></p> 
-        <p style ={{marginBottom:'5px'}}><b>Current Interests:</b><br/>Full Stack Development <br/> Data Science<br/> App Development</p>
+        <p style ={{marginBottom:'5px'}}><b>Current Interests:</b><br/>Full Stack Development <br/> App Development<br/>Data Science</p>
           </div>
       </div> 
      </div>
@@ -149,10 +145,10 @@ class Home extends React.Component {
         <Typography variant="display1" style={{color:'white'}}>Contact Me!</Typography>
       </div>
       <div className="flexRow" style={{backgroundColor:'#222222'}}>
-       <a href = "https://www.linkedin.com/in/melvin-tham/"  target="_blank"><i className = "fab fa-linkedin fa-4x" style = {{color: "rgb(0, 119, 181)",padding:'3px 3px',margin:'3px 3px'}}></i></a>
-       <a href = "https://github.com/MelvinTham"  target="_blank"><i className = "fab fa-github-square fa-4x " style = {{color: "black",padding:'3px 3px',margin:'3px 3px'}}></i></a>
-       <a href = "mailto:melvintham1997@gmail.com"  target="_blank"><i className = "fas fa-envelope fa-4x" style = {{color: "white",padding:'3px 3px',margin:'3px 3px'}}></i></a>
-       <a href = "https://www.instagram.com/tham_melvin/" target="_blank"><i className = "fab fa-instagram  fa-4x" style = {{color:"#e4405f",padding:'3px 3px',margin:'3px 3px'}}></i></a>
+       <a href = "https://www.linkedin.com/in/melvin-tham/"  target="_blank"><i className = "fab fa-linkedin fa-3x" style = {{color: "rgb(0, 119, 181)",padding:'3px 3px',margin:'3px 3px'}}></i></a>
+       <a href = "https://github.com/MelvinTham"  target="_blank"><i className = "fab fa-github-square fa-3x " style = {{color: "black",padding:'3px 3px',margin:'3px 3px'}}></i></a>
+       <a href = "mailto:melvintham1997@gmail.com"  target="_blank"><i className = "fas fa-envelope fa-3x" style = {{color: "white",padding:'3px 3px',margin:'3px 3px'}}></i></a>
+       <a href = "https://www.instagram.com/tham_melvin/" target="_blank"><i className = "fab fa-instagram  fa-3x" style = {{color:"#e4405f",padding:'3px 3px',margin:'3px 3px'}}></i></a>
             </div>
       <div id="footer" className="flexCenter" style={{height:'200px',backgroundColor:'#222222'}}>
       <div className="downArrow ">

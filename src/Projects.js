@@ -22,7 +22,7 @@ class Projects extends React.Component {
                 <Grid item xs={12} sm={6}>
                      <Paper className="projects" data-aos='fade-up'  data-aos-anchor-placement="center-bottom">
                         <img src ={pizza} alt = "pizza" className="image"/>
-                        <Typography className="flexRow" variant=" display4" style={{fontSize:"50px", color:'black'}}>Weirdoughs </Typography>
+                        <Typography className="flexRow " variant=" display4" style={{fontSize:"50px", color:'black',fontFamily:'Arial'}}>Weirdoughs </Typography>
                         <div className = "overlay flexCenter">
                              <p className = "text ">
                              <br/>
@@ -58,7 +58,7 @@ class Projects extends React.Component {
                 <Grid item xs={12} sm={6}>
                 <Paper className="projects" data-aos='fade-up' data-aos-offset="500" data-aos-duration="500">
                         <img src ={landing} alt = "pizza" className="image"/>
-                        <Typography className="flexRow" variant=" display4" style={{fontSize:"50px", color:'black'}}>Interactive Resume </Typography>
+                        <Typography className="flexRow " variant=" display4" style={{fontSize:"50px", color:'black'}}>Interactive Resume </Typography>
                         <div className = "overlay flexCenter">
                              <p className = "text ">
                              <br/>
