@@ -15,6 +15,7 @@ import Project from '@material-ui/icons/Build';
 import Code from '@material-ui/icons/Code';
 import Camera from '@material-ui/icons/CameraAlt';
 
+
 class Home extends React.Component {
   constructor(props) {
     super(props);
