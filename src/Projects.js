@@ -14,7 +14,7 @@ class Projects extends React.Component {
     render() {
         return(
             <div className="flexCenter" data-aos=''>
-             <Grid container spacing={24} className="flexRow" style= {{marginTop:'15px'}}>
+             <Grid container spacing={4} className="flexRow" style= {{marginTop:'15px'}}>
                 <Grid item xs={12} sm={6}>
                      <Paper className="projects" data-aos='fade-up'  data-aos-anchor-placement="center-bottom">
                         <img src ={pizza} alt = "pizza" className="image"/>
@@ -61,7 +61,7 @@ class Projects extends React.Component {
                                My interactive portfolio website :) 
                             <div className="flexRow">
                             <Button variant="contained" color="primary" style={{padding:'5px 5px',margin:'5px 5px', marginTop:'15px'}} href = "https://github.com/MelvinTham/melvintham"  target="_blank">GitHub</Button>
-                            <Button variant="contained" color="secondary" style={{padding:'5px 5px',margin:'5px 5px', marginTop:'15px'}} href = "http://melvintham.com"  target="_blank">View</Button>
+                            <Button variant="contained" color="secondary" style={{padding:'5px 5px',margin:'5px 5px', marginTop:'15px'}} href = "https://melvintham.com"  target="_blank">View</Button>
                             </div>
                          </p>
                     </div>

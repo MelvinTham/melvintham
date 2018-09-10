@@ -65,18 +65,18 @@ class Home extends React.Component {
           <hr className="divider"/>
           <div className="container"> 
            <div className="row"> 
-            <div className="col-md-4" style ={{padding:'20px 20px'}}>
+            <div className="col-md-4" >
               <h2>About me</h2>
               <p> Hello There! My name is Melvin Tham and welcome to my interactive website. I am currently in university, 
                   learning how to be a well rounded developer.
                   I like to learn new things and working with others. If you'd like to connect with me, feel free to click on the buttons below!</p> 
           </div>
-      <div className="col-md-4" style ={{padding:'20px 20px'}}>
+      <div className="col-md-4" >
       <div className="flexCenter">
       <Avatar  src={melvin} alt ="Melvin" className="melvinStyle"  />
       </div>
       </div> 
-      <div className="col-md-4" style ={{padding:'20px 20px'}}>
+      <div className="col-md-4" >
       <h2>Details</h2>
         <p style ={{marginBottom:'5px'}}><b>Education:</b><br/> The City College Of New York<br/></p>
         <p style ={{marginBottom:'5px'}}><b>Major:</b><br/> Computer Science <br/></p> 
