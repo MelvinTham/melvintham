@@ -45,7 +45,7 @@ class Home extends React.Component {
     
     return (
                 // START OF LANDING PAGE
-      <div data-aos ="fade-up" data-aos-easing="linear" data-aos-duration="750" className="Landing" ref="landing">  
+      <div className="Landing" ref="landing">  
           <header id="Landing">
             <h1 style ={{color:'White',fontSize:'100px'}} className="newFont" >Melvin Tham</h1>
             <hr className="divider"/>
@@ -58,14 +58,16 @@ class Home extends React.Component {
 
                  {/* PROFILE SECTION */}
 
-        <div id ="Profile" ref="profile" style={{background:'F4F4F4'}}>
+        <div id ="Profile" ref="profile" className=" profile" style={{background:'F4F4F4',textAlign:'center'}}>
           <div className="flexCenter">
               <h1>Profile</h1>
               <h5>Aspiring to be more than just a Software Engineer</h5>
           <hr className="divider"/>
+          </div>
+    <div className="flexRow">
           <div className="container"> 
            <div className="row"> 
-            <div className="col-md-4" >
+            <div className=".col-xs-6 .col-sm-4 col-md-4" >
             <div className="flexCenter">
               <h2>About me</h2>
               <p> Hello There! My name is Melvin Tham and welcome to my interactive website. I am currently in university, 
@@ -74,12 +76,13 @@ class Home extends React.Component {
             </div>
           </div>
           
-      <div className="col-md-4" >
+      <div className=".col-xs-6 .col-sm-4 col-md-4" >
       <div className="flexCenter">
       <Avatar  src={melvin} alt ="Melvin" className="melvinStyle"  />
       </div>
       </div> 
-      <div className="col-md-4" >
+
+      <div className=".col-xs-6 .col-sm-4 col-md-4" >
       <div className="flexCenter">
       <h2>Details</h2>
         <p style ={{marginBottom:'5px'}}><b>Education:</b><br/> The City College Of New York<br/></p>
@@ -89,7 +92,8 @@ class Home extends React.Component {
           </div>
       </div> 
      </div>
-    </div>
+     </div>
+    
   </div>
           {/* Buttons For Different Pages */}
 
